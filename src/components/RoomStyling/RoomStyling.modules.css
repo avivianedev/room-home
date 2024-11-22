@@ -1,0 +1,116 @@
+@charset "UTF-8";
+.roomstyling-wrapper {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.roomstyling-wrapper .roomstyling-image {
+  width: 60%;
+  height: 100%;
+}
+.roomstyling-wrapper .roomstyling-image .image-section {
+  width: 60vw;
+  height: 600px;
+  position: absolute;
+  top: 0;
+}
+.roomstyling-wrapper .roomstyling-description {
+  width: 40%;
+  height: 100%;
+  color: var(--Black);
+  padding: 4em;
+  position: relative;
+}
+.roomstyling-wrapper .roomstyling-description .box-content {
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+.roomstyling-wrapper .roomstyling-description .box-content .title {
+  font-size: 3.8em;
+}
+.roomstyling-wrapper .roomstyling-description .box-content .description {
+  text-align: start;
+  color: var(--DarkGray);
+  letter-spacing: 1px;
+  line-height: 18px;
+}
+.roomstyling-wrapper .roomstyling-description .box-content .btn-shop {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 18px;
+  text-align: start;
+  color: var(--Black);
+  font-weight: 700;
+  cursor: pointer;
+}
+.roomstyling-wrapper .roomstyling-description .box-content .btn-shop .icon-long-arrow {
+  font-size: 3em;
+  color: var(--DarkGray);
+}
+.roomstyling-wrapper .roomstyling-description .box-content .btn-shop:hover {
+  color: var(--DarkGray);
+}
+.roomstyling-wrapper .roomstyling-description .box-navigation {
+  width: 140px;
+  height: 70px;
+  background-color: var(--Black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.roomstyling-wrapper .roomstyling-description .box-navigation .navigation-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.roomstyling-wrapper .roomstyling-description .box-navigation .navigation-content.left .arrow-icon {
+  transform: rotate(180deg);
+}
+.roomstyling-wrapper .roomstyling-description .box-navigation .navigation-content:hover {
+  background-color: var(--DarkGray);
+}
+
+/* Inicio responsividade celular */
+@media (max-width: 375px) or (max-width: 1155px) {
+  .roomstyling-wrapper {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .roomstyling-wrapper .roomstyling-image {
+    width: 100%;
+    height: 100vw;
+  }
+  .roomstyling-wrapper .roomstyling-image .image-section {
+    width: 100%;
+    height: 100vw;
+  }
+  .roomstyling-wrapper .roomstyling-description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2em;
+  }
+  .roomstyling-wrapper .roomstyling-description .box-content .title {
+    font-size: 3em;
+  }
+  .roomstyling-wrapper .roomstyling-description .box-navigation {
+    position: absolute;
+    top: -45vw;
+    left: 62vw;
+  }
+}
+/* Término responsividade celular *//*# sourceMappingURL=RoomStyling.modules.css.map */
