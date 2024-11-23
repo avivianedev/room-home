@@ -3,7 +3,6 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import { SlArrowRight } from "react-icons/sl";
 import data from "./data.json"
 import { useState, useEffect } from "react";
-import About from "../About";
 
 const RoomStyling = () => {
 
@@ -21,25 +20,26 @@ const RoomStyling = () => {
 
 
     const incrementCount = () => {
-        if (count < 3) {
-            SetCount(count + 1)
-        }
-        return
+        console.log("Button clicked");
+        SetCount((prevCount) => (prevCount < 3 ? prevCount + 1 : prevCount));
+        //SetCount(anterior => anterior + 1)
     }
     const decrementtCount = () => {
-        if (count > 1) {
-            SetCount(count - 1)
-        }
-        return
+        console.log("Button clicked");
+        SetCount((prevCount) => (prevCount > 1 ? prevCount - 1 : prevCount));
+        //SetCount(anterior => anterior - 1)
     }
 
+    console.log("Valor do count: ", count)
     const idKey = `id${count}`;
     return (
         <section className="roomstyling-wrapper">
-            <div className="roomstyling-image">
-                {isMobile ? <img className="image-section responsive" src={data[0][idKey].responsive} alt="images of decorative furniture" />
 
-                    : <img className="image-section responsive" src={data[0][idKey].image} alt="images of decorative furniture" />}
+            <div className="roomstyling-image">
+
+                {isMobile ? <img key={idKey} className={`image-section ${count === 1 ? "active" : ""}`} src={data[0][idKey].responsive} alt="images of decorative furniture" />
+
+                    : <img className={`image-section ${count === 1 ? "active" : ""}`} src={data[0][idKey].image} alt="images of decorative furniture" />}
             </div>
 
             <div className="roomstyling-description">
@@ -56,12 +56,16 @@ const RoomStyling = () => {
                 </div>
 
                 <div className="box-navigation">
-                    <div className="navigation-content left">
-                        <SlArrowRight onClick={decrementtCount} className="arrow-icon" color="white" />
-                    </div>
-                    <div className="navigation-content">
-                        <SlArrowRight onClick={incrementCount} color="white" />
-                    </div>
+                    <button className="navigation-content left" onClick={decrementtCount} >
+                        <div >
+                            <SlArrowRight className="arrow-icon" color="white" />
+                        </div>
+                    </button>
+                    <button className="navigation-content" onClick={incrementCount}>
+                        <div >
+                            <SlArrowRight color="white" />
+                        </div>
+                    </button>
                 </div>
             </div>
 
