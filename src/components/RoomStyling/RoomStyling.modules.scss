@@ -16,8 +16,18 @@
         .image-section {
             width: 60vw;
             height: 65vh;
-            transition: opacity 0.5s ease-in-out;
+
+
+
+            &.active {
+                transition: 0.5s ease-in-out;
+                //opacity: 1;
+                //z-index: 1; // A imagem ativa fica no topo
+            }
+
         }
+
+        .image-section.active {}
 
         @keyframes fadeIn {
             0% {
@@ -103,6 +113,8 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            background-color: var(--Black);
+            border: none;
 
             &.left {
                 .arrow-icon {
@@ -130,6 +142,7 @@
             width: 100%;
             height: auto;
 
+
             .image-section {
                 width: 100%;
                 height: auto;
@@ -152,7 +165,7 @@
             }
 
             .box-content {
-                padding: 2.2em 1em;
+                //padding: 2.2em 1em;
                 width: 100%;
 
                 .title {

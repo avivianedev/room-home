@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
+
 :root {
   font-family: "League Spartan", sans-serif;
   /*Colors*/
@@ -9,6 +10,10 @@
   --Black: hsl(0, 0%, 0%);
   --White: hsl(0, 0%, 100%);
   --VeryDarkGray: hsl(0, 0%, 27%);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
