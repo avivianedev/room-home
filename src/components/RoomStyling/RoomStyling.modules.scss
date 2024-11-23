@@ -6,6 +6,8 @@
     position: absolute;
     top: 0;
 
+    //transition: 2s ease-in-out;
+
     .roomstyling-image {
         width: 60%;
         height: auto;
@@ -14,7 +16,17 @@
         .image-section {
             width: 60vw;
             height: 65vh;
+            transition: opacity 0.5s ease-in-out;
+        }
 
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
     }
 
@@ -74,7 +86,7 @@
     }
 
     .box-navigation {
-        width: 22%;
+        width: 25%;
         height: 13%;
         background-color: var(--Black);
         display: flex;
@@ -135,15 +147,20 @@
 
 
             .box-navigation {
-                top: -15%;
-                left: 78%;
+                top: -14%;
+                left: 75%;
             }
 
             .box-content {
+                padding: 2.2em 1em;
                 width: 100%;
 
                 .title {
                     font-size: 3em;
+                }
+
+                .btn-shop {
+                    font-size: 1.3em;
                 }
 
             }

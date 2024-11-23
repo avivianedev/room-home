@@ -11,6 +11,12 @@
   --VeryDarkGray: hsl(0, 0%, 27%);
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+
+}
+
 * {
   margin: 0;
   padding: 0;

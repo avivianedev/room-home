@@ -3,6 +3,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import { SlArrowRight } from "react-icons/sl";
 import data from "./data.json"
 import { useState, useEffect } from "react";
+import About from "../About";
 
 const RoomStyling = () => {
 
@@ -35,13 +36,10 @@ const RoomStyling = () => {
     const idKey = `id${count}`;
     return (
         <section className="roomstyling-wrapper">
-
             <div className="roomstyling-image">
-
                 {isMobile ? <img className="image-section responsive" src={data[0][idKey].responsive} alt="images of decorative furniture" />
 
                     : <img className="image-section responsive" src={data[0][idKey].image} alt="images of decorative furniture" />}
-
             </div>
 
             <div className="roomstyling-description">
@@ -66,7 +64,6 @@ const RoomStyling = () => {
                     </div>
                 </div>
             </div>
-
 
         </section>
     )
