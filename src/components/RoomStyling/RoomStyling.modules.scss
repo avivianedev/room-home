@@ -27,17 +27,6 @@
 
         }
 
-        .image-section.active {}
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
     }
 
     .roomstyling-description {
@@ -48,6 +37,7 @@
         color: var(--Black);
         padding: 5em;
         position: relative;
+
 
 
         .box-content {
@@ -155,12 +145,13 @@
         .roomstyling-description {
             bottom: 0;
             width: 100%;
-            height: auto;
+            height: 100%;
             padding: 1.5em;
-
+            z-index: 5;
+            position: relative;
 
             .box-navigation {
-                top: -14%;
+                top: -15%;
                 left: 75%;
             }
 
@@ -170,6 +161,10 @@
 
                 .title {
                     font-size: 3em;
+                }
+
+                .description {
+                    font-size: 18px;
                 }
 
                 .btn-shop {
