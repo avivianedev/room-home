@@ -94,8 +94,13 @@
 
         .about-text {
             width: 100%;
-            padding: 2em;
-            height: 40vh;
+            padding: 1.8em;
+            //height: 40vh;
+            height: auto;
+
+            .title-about {
+                font-size: .8em;
+            }
         }
     }
 }

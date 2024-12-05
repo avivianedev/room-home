@@ -7,5 +7,7 @@
 }
 
 @media (max-width: 375px) or (max-width: 1155px) {
-    .about-container {}
+    .about-container {
+        bottom: -25%;
+    }
 }
