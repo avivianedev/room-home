@@ -121,7 +121,7 @@
 
 /* Inicio responsividade celular */
 
-@media (max-width: 375px) or (max-width: 1155px) {
+@media (max-width: 1155px) {
 
     .roomstyling-wrapper {
         flex-direction: column;
@@ -151,7 +151,7 @@
             position: relative;
 
             .box-navigation {
-                top: -15%;
+                top: -14.5%;
                 left: 75%;
             }
 
