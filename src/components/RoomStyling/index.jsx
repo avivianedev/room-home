@@ -53,12 +53,12 @@ const RoomStyling = () => {
                 </div>
 
                 <div className="box-navigation">
-                    <button className="navigation-content left" onClick={decrementtCount} >
+                    <button className="navigation-content left" aria-label="Go back" onClick={decrementtCount} >
                         <div >
                             <SlArrowRight className="arrow-icon" color="white" />
                         </div>
                     </button>
-                    <button className="navigation-content" onClick={incrementCount}>
+                    <button className="navigation-content" aria-label="Go forward" onClick={incrementCount}>
                         <div >
                             <SlArrowRight color="white" />
                         </div>
