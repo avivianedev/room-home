@@ -20,17 +20,14 @@ const RoomStyling = () => {
 
 
     const incrementCount = () => {
-        console.log("Button clicked");
         SetCount((prevCount) => (prevCount < 3 ? prevCount + 1 : prevCount));
-        //SetCount(anterior => anterior + 1)
+
     }
     const decrementtCount = () => {
-        console.log("Button clicked");
         SetCount((prevCount) => (prevCount > 1 ? prevCount - 1 : prevCount));
-        //SetCount(anterior => anterior - 1)
+
     }
 
-    console.log("Valor do count: ", count)
     const idKey = `id${count}`;
     return (
         <section className="roomstyling-wrapper">
