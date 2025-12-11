@@ -25,9 +25,17 @@ const Header = () => {
   return (
     <header className="header-wrapper">
       <img
-        src={`../../../public/assets/images/hero-mobile_0${indexSlider}.png`}
+        src={`/assets/images/hero-mobile_0${indexSlider}.png`}
         alt=""
-        className="hero-image"
+        className="hero-image mobile"
+      />
+
+      <img
+        src={`/assets/images/hero-tablet_0${indexSlider}.png`}
+        alt=""
+        className="hero-image tablet"
+        hidden
+        
       />
       {showMenuMobile ? (
         <MdOutlineClose

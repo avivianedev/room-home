@@ -73,4 +73,29 @@
   .invisible {
     display: none;
   }
+
+  
+}
+
+
+@media screen and (min-width: 744px) {
+    .header-wrapper{
+      
+       .icon-responsive-hamburger{
+        margin-left: 48px;
+       }
+       .navigation-menu {
+        padding-right: 63.5px;
+       }
+      .hero-image{
+
+        &.mobile{
+          display: none;
+        }
+
+        &.tablet{
+          display: block;
+        }
+      }
+    }
 }
