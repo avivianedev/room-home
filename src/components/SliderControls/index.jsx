@@ -1,0 +1,23 @@
+import "./SliderControls.modules.scss"
+import iconPrev from "../../../public/assets/images/icon-angle-left.svg"
+import iconNext from "../../../public/assets/images/icon-angle-right.svg"
+
+
+const SliderControls = ({handlePrev, handleNext}) => {
+
+    
+
+    return (
+        <section className='slider-controls-container'>
+            <button onClick={handlePrev} aria-label="Slide Anterior" >
+                <img src={iconPrev} alt="Imagem de uma seta para a esquerda" />
+            </button>
+            <button onClick={handleNext} aria-label="Próximo Slide" >
+                <img src={iconNext} alt="Imagem de uma seta para a direita" />
+            </button>
+        </section>
+    )
+}
+
+
+export default SliderControls
