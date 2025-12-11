@@ -1,0 +1,24 @@
+.hero-slider {
+  
+  .hero-image {
+    height: 415px;
+    width: 100%;
+
+    
+  }
+}
+
+
+@media screen and (min-width: 744px){
+    .hero-image{
+
+        &.mobile{
+          display: none;
+        }
+
+        &.tablet{
+          display: block;
+        }
+      }
+
+}

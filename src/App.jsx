@@ -1,17 +1,18 @@
 import './App.css'
 
-import About from './components/About'
 import Header from './components/Header'
-import RoomStyling from './components/RoomStyling'
+import HeroSection from './components/HeroSection'
 
 
 
 const App = () => {
   return (
-    <>
+    <main>    
       <Header />
-    </>
-
+      
+      <HeroSection/>
+      
+    </main>
   )
 }
 
