@@ -1,6 +1,6 @@
 import "./SliderControls.modules.scss"
-import iconPrev from "../../../public/assets/images/icon-angle-left.svg"
-import iconNext from "../../../public/assets/images/icon-angle-right.svg"
+import iconPrev from "/assets/images/icon-angle-left.svg"
+import iconNext from "/assets/images/icon-angle-right.svg"
 
 
 const SliderControls = ({handlePrev, handleNext}) => {
