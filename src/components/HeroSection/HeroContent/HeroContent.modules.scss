@@ -1,0 +1,37 @@
+@use "../../../styles/typography.scss" as type;
+
+.hero-content{
+    padding-top: var(--spacing-800);
+    
+    .hero-title{
+        @include type.text-preset-2;
+        color: var(--black);
+        margin-bottom: var(--spacing-200);
+       
+    }
+    .hero-description{
+        height: 132px;
+        color: var(--gray-500);
+        margin-bottom: var(--spacing-400);
+        @include type.text-preset-3-medium
+       
+    }
+    .btn{
+        display: flex;
+        background-color: transparent;
+        border: none;
+        gap: 40px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 744px) {
+    .hero-content{
+        .hero-title{
+            @include type.text-preset-1;
+        }
+        .hero-description{
+            height: 66px;
+        }
+    }
+}

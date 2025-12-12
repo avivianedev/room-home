@@ -1,39 +1,39 @@
-.text-preset-1{
+@mixin text-preset-1{
   font-size: 48px;
   line-height: 0.9;
   font-weight: var(--fw-semi-bold);
   letter-spacing: -2px;
 }
 
-.text-preset-2{
+@mixin text-preset-2{
   font-size: 40px;
   line-height: 1;
   font-weight: var(--fw-semi-bold);
   letter-spacing: -2px;
 }
 
-.text-preset-3-bold{
+@mixin text-preset-3-bold{
   font-size: 16px;
   line-height: 1.4;
   font-weight: var(--fw-bold);
   letter-spacing: 7px;
 }
 
-.text-preset-3-semi-bold{
+@mixin text-preset-3-semi-bold{
   font-size: 16px;
   line-height: 1;
   font-weight: var(--fw-semi-bold);
   letter-spacing: -0.7px;
 }
 
-.text-preset-3-medium{
+@mixin text-preset-3-medium{
   font-size: 16px;
   line-height: 1.4;
   font-weight: var(--fw-medium);
   letter-spacing: -0.5px;
 }
 
-.text-preset-4{
+@mixin text-preset-4{
   font-size: 15px;
   line-height: 1;
   font-weight: var(--fw-medium);
