@@ -1,7 +1,7 @@
 @use "../../../styles/typography.scss" as type;
 
 .hero-content{
-    padding-top: var(--spacing-800);
+    //padding-top: var(--spacing-800);
     
     .hero-title{
         @include type.text-preset-2;
@@ -17,21 +17,28 @@
        
     }
     .btn{
+        width: 100%;
         display: flex;
         background-color: transparent;
+        justify-content: space-between;
         border: none;
         gap: 40px;
         cursor: pointer;
+        @include type.text-preset-4
     }
 }
 
 @media screen and (min-width: 744px) {
     .hero-content{
+        
         .hero-title{
             @include type.text-preset-1;
         }
         .hero-description{
             height: 66px;
+        }
+        .btn{
+            justify-content: flex-start;
         }
     }
 }
@@ -39,6 +46,7 @@
 @media screen and (min-width: 1440px) {
     .hero-content{
         padding: 139px 100px;
+        height: 65vh;
         
 
         .hero-description{
@@ -48,5 +56,7 @@
 }
 
 @media screen and (min-width: 1920px){
-    
+    .hero-content{
+        height: 60vh;
+    }
 }

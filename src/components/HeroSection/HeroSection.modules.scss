@@ -1,15 +1,15 @@
 .hero-section-container{
     width: 100%;
-    position: absolute;
-    top: 0;
-    height: 415px;
+   
 }
 
 
 @media screen and (min-width: 1440px){
     .hero-section-container{
         display: flex;       
-        height: 534px;
+        height: 65vh;
+        position: absolute;
+        top: 0;
     }
 }
 
@@ -17,5 +17,6 @@
     .hero-section-container{
         display: flex;       
         height: 60vh;
+        
     }
 }
