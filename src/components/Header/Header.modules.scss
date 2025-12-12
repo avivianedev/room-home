@@ -85,7 +85,7 @@
 @media screen and (min-width: 1440px) {
   .header-wrapper {
     padding: var(--spacing-800) 0 0 var(--spacing-800);
-    height: 534px;
+    height: 65vh;
     .icon-responsive-hamburger {
       display: none;
     }
@@ -120,5 +120,11 @@
       }
     }
     
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header-wrapper{
+    height: 60vh;
   }
 }
