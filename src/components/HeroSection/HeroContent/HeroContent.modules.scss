@@ -35,3 +35,14 @@
         }
     }
 }
+
+@media screen and (min-width: 1140px) {
+    .hero-content{
+        padding: 139px 100px;
+        
+
+        .hero-description{
+            height: 110px;
+        }
+    }
+}
