@@ -3,6 +3,7 @@ import "./Header.modules.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
 
+import logo from "../../../public/assets/images/logo.svg"
 
 const Header = () => {
   const [showMenuMobile, setShowMenuMobile] = useState(false);
@@ -27,9 +28,9 @@ const Header = () => {
         />
       )}
 
-      <h1 className={showMenuMobile ? "invisible" : "logo"}>room</h1>
+      <img className={showMenuMobile ? "invisible" : "logo"} src={logo}/>
 
-      <nav className={showMenuMobile ? "navigation-menu" : "invisible"}>
+      <nav className={showMenuMobile ? "navigation-menu visible" : "navigation-menu invisible"}>
         <ul className="nav-list">
           <li className="nav-list-item">
             <a className="text-preset-3-semi-bold" href="">

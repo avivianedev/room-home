@@ -1,22 +1,27 @@
+@use "../../styles/typography.scss" as type;
+
 .header-wrapper {
   width: 100%;
   height: 415px;
-  color: var(--White);  
+  color: var(--White);
   display: flex;
   justify-content: center;
   font-family: var(--font-family);
-  position: relative;  
+  position: relative;
 
-  
-  .logo {    
+  .logo {
+    width: 61px;
+    height: 13px;
     color: var(--White);
-    margin-top: 42px;
+    margin-top: 48px;
     z-index: 1;
   }
   .icon-responsive-hamburger {
+    width: 20px;
+    height: 14px;
     font-size: 20px;
     position: absolute;
-    top: 48px;
+    top: 47px;
     left: 24px;
     z-index: 1;
 
@@ -43,15 +48,14 @@
       padding-top: 52px;
 
       .nav-list-item {
-        
-        a {          
+        a {
           color: var(--Black);
 
-          .hover-navlink{
+          .hover-navlink {
             transform: scaleX(0);
             /* Inicialmente invisível */
             transform-origin: center;
-            transition: transform 0.3s ease-in-out; 
+            transition: transform 0.3s ease-in-out;
           }
           &:hover .hover-navlink {
             display: block;
@@ -65,19 +69,56 @@
   .invisible {
     display: none;
   }
-
-  
 }
 
-
 @media screen and (min-width: 744px) {
-    .header-wrapper{
-      
-       .icon-responsive-hamburger{
-        margin-left: 48px;
-       }
-       .navigation-menu {
-        padding-right: 63.5px;
-       }      
+  .header-wrapper {
+    .icon-responsive-hamburger {
+      margin-left: 48px;
     }
+    .navigation-menu {
+      padding-right: 63.5px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-wrapper {
+    padding: var(--spacing-800) 0 0 var(--spacing-800);
+    height: 534px;
+    .icon-responsive-hamburger {
+      display: none;
+    }
+    .logo{
+      margin-top: 0;
+      padding-top: 0;     
+    }
+
+    .navigation-menu{
+      .nav-list{
+        justify-content: flex-start;
+        margin-left: var(--spacing-700);
+        padding-top: 0;
+       
+
+        .nav-list-item{
+
+          a{
+              color: var(--White);
+              cursor: pointer;
+              
+              .hover-navlink{
+                color: inherit;
+              }
+          }
+        }
+      }
+
+      &.invisible{
+        display: block;
+        background-color: transparent;
+      }
+    }
+    
+  }
 }

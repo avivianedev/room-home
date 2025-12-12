@@ -17,6 +17,13 @@ const HeroSlider = ({indexSlider, handlePrev, handleNext}) => {
         hidden
       />
 
+      <img
+        src={`/assets/images/hero-desktop_0${indexSlider}.png`}
+        alt=""
+        className="hero-image desktop"
+        hidden
+      />
+
       <SliderControls 
         handlePrev={handlePrev}
         handleNext={handleNext}
