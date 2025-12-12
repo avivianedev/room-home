@@ -3,7 +3,7 @@ import "./HeroSlider.modules.scss";
 
 const HeroSlider = ({indexSlider, handlePrev, handleNext}) => {
   return (
-    <section className="hero-slider">
+    <section className="hero-slider-container">
       <img
         src={`/assets/images/hero-mobile_0${indexSlider}.png`}
         alt=""

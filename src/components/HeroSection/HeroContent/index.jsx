@@ -1,12 +1,14 @@
 import "./HeroContent.modules.scss";
-import data from "./data.json" 
+import { slidesContent } from "./data";
 
 const HeroContent = ({indexSlider}) => {
+
+  const currentSlide = slidesContent[indexSlider - 1];
     
   return (
     <section className="hero-content container-padding">
-       <h1 className="hero-title">{data[indexSlider].title}</h1>
-      <p className="hero-description">{data[indexSlider].description}</p>
+       <h1 className="hero-title">{currentSlide?.title}</h1>
+      <p className="hero-description">{currentSlide?.description}</p>
 
         <button className="btn text-preset-4">SHOP NOW
             <img src=".\assets\images\icon-arrow.svg" alt="" />

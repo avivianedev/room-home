@@ -3,7 +3,7 @@ import "./Header.modules.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
 
-import logo from "../../../public/assets/images/logo.svg"
+import logo from "/assets/images/logo.svg"
 
 const Header = () => {
   const [showMenuMobile, setShowMenuMobile] = useState(false);
