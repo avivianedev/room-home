@@ -8,11 +8,13 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 
     button{
         display: inline-block;
         background-color: transparent;
         border: none;
+        cursor: pointer;
     }
     
 }
@@ -20,5 +22,11 @@
 @media screen and (min-width: 1440px){
     .slider-controls-container{
         left: 840px;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .slider-controls-container{
+        left: 60vw;
     }
 }

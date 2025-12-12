@@ -1,4 +1,4 @@
-.hero-slider {
+.hero-slider-container {
   .hero-image {
     height: 415px;
     width: 100%;
@@ -18,8 +18,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .hero-slider {
-    width: 65%;
+  .hero-slider-container {
     .hero-image {
       &.mobile {
         display: none;
@@ -30,8 +29,21 @@
       }
       &.desktop {
         display: block;
-        width: 840px;    
-        height: 534px;    
+        width: 840px;
+        height: 534px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .hero-slider-container {
+    width: 60vw;
+    .hero-image {
+      &.desktop {
+        display: block;
+        width: 60vw;
+        height: 60vh;
       }
     }
   }
