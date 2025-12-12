@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './HeroSection.modules.scss'
 import HeroSlider from './HeroSlider';
+import HeroContent from './HeroContent';
 
 
 const HeroSection = () => {
@@ -22,6 +23,10 @@ const HeroSection = () => {
   indexSlider={indexSlider}
   handlePrev={handlePrev}
   handleNext={handleNext}
+  />
+
+  <HeroContent
+  indexSlider={indexSlider}
   />
 
   </section>;
