@@ -28,6 +28,10 @@
     position: relative;
     width: 60vw;
     height: 65vh;
+    @keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
     .hero-image {
       &.mobile {
         display: none;
@@ -45,16 +49,18 @@
   }
 }
 
+
 @media screen and (min-width: 1920px) {
   .hero-slider-container {
     width: 60vw;
-    height: 60vh;
+    height: 65vh;
     .hero-image {
       &.desktop {
         display: block;
         width: 60vw;
-        height: 60vh;
+        height: 65vh;
       }
     }
   }
 }
+

@@ -22,11 +22,16 @@
 @media screen and (min-width: 1440px){
     .slider-controls-container{
         left: 60vw;
+        width: 10vw;       
+        z-index: 3;
+        
     }
 }
 
 @media screen and (min-width: 1920px){
     .slider-controls-container{
         left: 60vw;
+        width: 8vw;       
+        z-index: 3;
     }
 }

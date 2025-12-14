@@ -44,19 +44,27 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .hero-content{
-        padding: 139px 100px;
-        height: 65vh;
-        
+  .hero-content {
+    padding: 139px 100px;
+    height: 65vh;
+    width: 40vw;
+    position: relative;
 
-        .hero-description{
-            height: 110px;
-        }
+    .hero-description {
+      width: 400px;
+      height: 110px;
+      margin-top: var(--spacing-300);
     }
+  }
 }
 
-@media screen and (min-width: 1920px){
-    .hero-content{
-        height: 60vh;
+@media screen and (min-width: 1920px) {
+  .hero-content {
+    height: 65vh;
+    padding: 139px;
+    .hero-description{
+      width: auto;
+       margin-top: var(--spacing-600);
     }
+  }
 }

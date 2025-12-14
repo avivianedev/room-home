@@ -5,7 +5,7 @@
   position: relative;
   .image-dark {
     height: 248px;
-    background: url("../../../public/assets/images/image-mobile_dark.png")
+    background: url("/assets/images/image-mobile_dark.png")
       no-repeat;
     background-size: cover;
   }
@@ -26,7 +26,7 @@
 
   .image-light {
     height: 248px;
-    background: url("../../../public/assets/images/image-mobile_light.png")
+    background: url("/assets/images/image-mobile_light.png")
       no-repeat;
     background-size: cover;
   }
@@ -37,7 +37,7 @@
     .image-dark {
       width: 100%;
       height: 320px;
-      background: url("../../../public/assets/images/image-tablet_dark.png")
+      background: url("/assets/images/image-tablet_dark.png")
         no-repeat;
       background-size: cover;
     }
@@ -45,7 +45,7 @@
      .image-light {
       width: 100%;
       height: 320px;
-      background: url("../../../public/assets/images/image-tablet_light.png")
+      background: url("/assets/images/image-tablet_light.png")
         no-repeat;
       background-size: cover;
     }
@@ -59,27 +59,29 @@
     height: 35vh;
 
     .about-text{      
-      width: 40vw;
-      height: 35vh;
+      width: 35vw;
+      //height: 35vh;
       p{
+        //width: 484px;
+        height: 110px;
         margin-top: 16px;
       }
       &.container-padding{
-        padding: 48px;
+        padding: 59px 48px;;
       }
     }
 
     .image-dark {
-      width: 32vw;
+      width: 35vw;
       height: 35vh;
-      background: url("../../../public/assets/images/image-desktop_dark.png")
+      background: url("/assets/images/image-desktop_dark.png")
         no-repeat;
       background-size: cover;
     }
     .image-light{
-      width: 35vw;
-      height: 35vh;
-      background: url("../../../public/assets/images/image-desktop_light.png")
+      width: 30vw;
+      height: 35vh;;
+      background: url("/assets/images/image-desktop_light.png")
         no-repeat;
       background-size: cover;
     }
@@ -88,23 +90,27 @@
 
 @media screen and (min-width: 1920px) {
   .about-section-container {
-    height: 40vh;
+    height: 35vh;
     .image-dark {
-      height: 40vh;
-      width: 32%;
+      height: 35vh;
+      width: 32vw;
     }
      .about-text{
-      width: 35%;
-      height: 40vh;
+      width: 36vw;
+      height: 35vh;
+      p{
+        //max-width: 45ch;
+      }
       &.container-padding{
-        padding: 100px;
+        padding: 84px;
       }
       
     }
 
     .image-light {
-      height: 40vh;
-      width: 35%;
+      height: 35vh;
+      width: 32vw;
     }
   }
 }
+
