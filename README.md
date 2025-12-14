@@ -8,17 +8,17 @@ Esta é uma solução para o desafio [Room homepage](https://www.frontendmentor.
 
 Este projeto consiste em uma Landing Page para uma loja de móveis com um slider de navegação entre diferentes seções de produtos. O foco principal foi a fidelidade ao layout proposto e a responsividade.
 
-## 📸 Telas do Projeto
-| Desktop |
-| <img src="./public/assets/screenshots/desktop.png" width="400"> |
+### Desktop
+<div align="center">
+  <img src="./public/assets/screenshots/desktop.png" width="700px" alt="Tela Desktop">
+</div>
 
-| Mobile  | Menu_Mobile | Tablet 
-|:--------------------:|:--------------------:|
-| <img src="./public/assets/screenshots/mobile.png" width="400"> | <img src="./public/assets/screenshots/mobile_menu.png" width="400"> |
+<br>
 
-| Tablet |
-| <img src="./public/assets/screenshots/Ipad.png" width="400"> |
-
+### Mobile & Tablet
+| Mobile | Menu Mobile | Tablet |
+|:---:|:---:|:---:|
+| <img src="./public/assets/screenshots/mobile.png" width="200"> | <img src="./public/assets/screenshots/mobile_menu.png" width="200"> | <img src="./public/assets/screenshots/Ipad.png" width="400"> |
 ### 🚀 Tecnologias Utilizadas
 
 - **React** (Estrutura e Lógica de Componentes)
