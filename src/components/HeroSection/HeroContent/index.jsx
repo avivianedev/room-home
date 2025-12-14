@@ -10,7 +10,7 @@ const HeroContent = ({indexSlider}) => {
        <h1 className="hero-title">{currentSlide?.title}</h1>
       <p className="hero-description">{currentSlide?.description}</p>
 
-        <button className="btn text-preset-4">SHOP NOW
+        <button type="button" className="btn text-preset-4">SHOP NOW
             <img src=".\assets\images\icon-arrow.svg" alt="imagem de uma seta para a direita." />
         </button>
     </section>

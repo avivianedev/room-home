@@ -9,10 +9,10 @@ const SliderControls = ({handlePrev, handleNext}) => {
 
     return (
         <section className='slider-controls-container'>
-            <button onClick={handlePrev} aria-label="Slide Anterior" >
+            <button  type="button" onClick={handlePrev} aria-label="Slide Anterior" >
                 <img src={iconPrev} alt="Imagem de uma seta para a esquerda" />
             </button>
-            <button onClick={handleNext} aria-label="Próximo Slide" >
+            <button  type="button" onClick={handleNext} aria-label="Próximo Slide" >
                 <img src={iconNext} alt="Imagem de uma seta para a direita" />
             </button>
         </section>
