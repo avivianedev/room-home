@@ -8,14 +8,14 @@ const HeroSlider = ({ indexSlider, handlePrev, handleNext }) => {
   return (
     <section className="hero-slider-container">
       <img
-        key={indexSlider}
+        key={`mobile-${indexSlider}`}
         src={`/assets/images/hero-mobile_0${indexSlider}.png`}
         alt={currentSlide[indexSlider - 1].alt}
         className="hero-image mobile"
       />
 
       <img
-        key={indexSlider}
+        key={`tablet-${indexSlider}`} 
         src={`/assets/images/hero-tablet_0${indexSlider}.png`}
         alt={currentSlide[indexSlider - 1].alt}
         className="hero-image tablet"
@@ -23,7 +23,7 @@ const HeroSlider = ({ indexSlider, handlePrev, handleNext }) => {
       />
 
       <img
-        key={indexSlider}
+        key={`desktop-${indexSlider}`}
         src={`/assets/images/hero-desktop_0${indexSlider}.png`}
         alt={currentSlide[indexSlider - 1].alt}
         className="hero-image desktop"
