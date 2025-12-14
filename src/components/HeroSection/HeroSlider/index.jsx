@@ -4,11 +4,13 @@ import { slidesContent } from "../HeroContent/data";
 
 const HeroSlider = ({indexSlider, handlePrev, handleNext}) => {
   const currentSlide = slidesContent  
+  
   return (
     <section className="hero-slider-container">
       <img
         src={`/assets/images/hero-mobile_0${indexSlider}.png`}
         alt={currentSlide[indexSlider-1].alt}
+        className="hero-image mobile"
       />
 
       <img
