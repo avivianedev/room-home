@@ -1,62 +1,76 @@
 @use "../../../styles/typography.scss" as type;
 
-.hero-content{
-    //padding-top: var(--spacing-800);
-    
-    .hero-title{
-        @include type.text-preset-2;
-        color: var(--black);
-        margin-bottom: var(--spacing-200);
-       
+.hero-content {
+  //padding-top: var(--spacing-800);
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
     }
-    .hero-description{
-        height: 132px;
-        color: var(--gray-500);
-        margin-bottom: var(--spacing-400);
-        @include type.text-preset-3-medium
-       
+    to {
+      opacity: 1;
     }
-    .btn{
-        width: 100%;
-        display: flex;
-        background-color: transparent;
-        justify-content: space-between;
-        border: none;
-        gap: 40px;
-        cursor: pointer;
-        @include type.text-preset-4
-    }
+  }
+
+  .hero-title {
+    @include type.text-preset-2;
+    color: var(--black);
+    margin-bottom: var(--spacing-200);
+  }
+  .hero-description {
+    height: 132px;
+    color: var(--gray-500);
+    margin-bottom: var(--spacing-400);
+    @include type.text-preset-3-medium;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  .btn {
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    border: none;
+    gap: 40px;
+    cursor: pointer;
+    @include type.text-preset-4;
+  }
 }
 
 @media screen and (min-width: 744px) {
-    .hero-content{
-        
-        .hero-title{
-            @include type.text-preset-1;
-        }
-        .hero-description{
-            height: 66px;
-        }
-        .btn{
-            justify-content: flex-start;
-        }
+  .hero-content {
+    .hero-title {
+      @include type.text-preset-1;
     }
+    .hero-description {
+      height: 66px;
+    }
+    .btn {
+      justify-content: flex-start;
+    }
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .hero-content{
-        padding: 139px 100px;
-        height: 65vh;
-        
+  .hero-content {
+    padding: 139px 100px;
+    height: 65vh;
+    width: 40vw;
+    position: relative;
 
-        .hero-description{
-            height: 110px;
-        }
+    .hero-description {
+      width: 400px;
+      height: 110px;
+      margin-top: var(--spacing-300);
     }
+  }
 }
 
-@media screen and (min-width: 1920px){
-    .hero-content{
-        height: 60vh;
+@media screen and (min-width: 1920px) {
+  .hero-content {
+    height: 65vh;
+    padding: 139px;
+    .hero-description{
+      width: auto;
+       margin-top: var(--spacing-600);
     }
+  }
 }
