@@ -2,8 +2,6 @@
 
 Esta é uma solução para o desafio [Room homepage](https://www.frontendmentor.io/challenges/room-homepage-B8vQn5MnZ) do Frontend Mentor.
 
-![Preview do Projeto](./design/desktop-preview.jpg)
-
 ## 📋 Sobre o Projeto
 
 Este projeto consiste em uma Landing Page para uma loja de móveis com um slider de navegação entre diferentes seções de produtos. O foco principal foi a fidelidade ao layout proposto e a responsividade.
@@ -21,10 +19,10 @@ Este projeto consiste em uma Landing Page para uma loja de móveis com um slider
 | <img src="./public/assets/screenshots/mobile.png" width="200"> | <img src="./public/assets/screenshots/mobile_menu.png" width="200"> | <img src="./public/assets/screenshots/Ipad.png" width="400"> |
 ### 🚀 Tecnologias Utilizadas
 
-- **React** (Estrutura e Lógica de Componentes)
-- **Vite** (Build Tool rápida e otimizada)
-- **CSS / Sass** (Adapte aqui conforme o que você usou: SASS, Tailwind, Modules, etc.)
-- **JavaScript** (Lógica de navegação do slider)
+- **React** 
+- **Vite** 
+- **CSS / Sass** 
+- **JavaScript** 
 
 ### ✨ Funcionalidades
 
